@@ -6,14 +6,14 @@
 # @name getUsers
 GET http://localhost:3000/api/users
 
-###
+### //Check
 
 // HÄMTA SPECIFIK USER // SKICKA HELA OBJEKTET
 POST http://localhost:3000/api/users/
 Content-Type: application/json
 
 {
-  "id": "// EN USER ID"
+  "id": "641c1237989a63bf2e051346"
 }
 
 ###
@@ -28,7 +28,7 @@ Content-Type: application/json
   "password": "test"
 }
 
-###
+### //Check
 
 // LOGGA IN USER
 POST http://localhost:3000/api/users/login
