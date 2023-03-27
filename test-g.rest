@@ -2,7 +2,7 @@
 // API ENDPOINTS USER
 //
 
-// HÄMTA ALLA USERS // SKICKA INTE MED LÖSENORD // BARA ID, NAMN + EMAIL PÅ ALLA USERS
+// HÄMTA ALLA USER S // SKICKA INTE MED LÖSENORD // BARA ID, NAMN + EMAIL PÅ ALLA USERS
 # @name getUsers
 GET http://localhost:3000/api/users
 
@@ -62,8 +62,8 @@ POST http://localhost:3000/api/products/add
 Content-Type: application/json
 
 {
-  "name": "Produkt 1",
-  "description": "Beskrivning av produkt 1",
+  "name": "Produkt 2",
+  "description": "Beskrivning av produkt 2",
   "price": 100, 
   "lager": 10
 }
@@ -82,11 +82,11 @@ Content-Type: application/json
   "user": "{{getUsers.response.body.$[0].id}}",
       "products": [
     {
-      "productId": "// ID PÅ EN PRODUKT",
+      "productId": "641c4e31277c4091838d69e5",
       "quantity": 1
     },
     {
-      "productId": "// ID PÅ EN PRODUKT",
+      "productId": "641c4f5e47a80dff3a5351fe",
       "quantity": 2
     }
   ]

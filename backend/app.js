@@ -11,12 +11,12 @@ var app = express();
 const MongoClient = require("mongodb").MongoClient;
 MongoClient.connect("mongodb+srv://sebastianpost:CPWNyr8xJ5Qm7ZhY@cluster0.okp4lug.mongodb.net/?retryWrites=true&w=majority")
 .then(client => {
-    console.log("Mongo från kongo");
+    console.log("Ansluten till DB");
 
     const db = client.db("users");
     app.locals.db = db;
 })
-
+ 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
