@@ -9,7 +9,7 @@ var apiRouter = require('././routes/api');
 var app = express();
 
 const MongoClient = require("mongodb").MongoClient;
-MongoClient.connect("mongodb+srv://sebastianpost:CPWNyr8xJ5Qm7ZhY@cluster0.okp4lug.mongodb.net/?retryWrites=true&w=majority")
+MongoClient.connect("user:pass")
 .then(client => {
     console.log("Ansluten till DB");
 
