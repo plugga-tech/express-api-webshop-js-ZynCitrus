@@ -5,16 +5,23 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var apiRouter = require('././routes/api');
 var app = express();
-const MongoClient = require("mongodb").MongoClient;
 
-const url = "mongodb://localhost:27017/users";
+const MongoClient = require('mongodb').MongoClient;
+const url = 'mongodb://127.0.0.1:27017/';
+
 MongoClient.connect(url)
-.then(client => {
-    console.log("Ansluten till DB");
+  .then(client => {
+    console.log('Connected to the database');
 
-    const db = client.db("users");
+    const db = client.db('users');
     app.locals.db = db;
-})
+  })
+  .catch(error => {
+    console.error('Error connecting to the database:', error);
+  });
+
+
+
  
 app.use(logger('dev'));
 app.use(express.json());

@@ -1,15 +1,11 @@
-//
-// API ENDPOINTS USER
-//
-
 // HÄMTA ALLA USER S // SKICKA INTE MED LÖSENORD // BARA ID, NAMN + EMAIL PÅ ALLA USERS
 # @name getUsers
-GET http://localhost:3000/api/users
+GET http://localhost:3000/users
 
 ### //Check
 
 // HÄMTA SPECIFIK USER // SKICKA HELA OBJEKTET
-POST http://localhost:3000/api/users/
+POST http://localhost:3000/users/
 Content-Type: application/json
 
 {
@@ -19,7 +15,7 @@ Content-Type: application/json
 ###
 
 // SKAPA USER
-POST http://localhost:3000/api/users/add
+POST http://localhost:3000/users/add
 Content-Type: application/json
 
 {
@@ -31,34 +27,30 @@ Content-Type: application/json
 ### //Check
 
 // LOGGA IN USER
-POST http://localhost:3000/api/users/login
+POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
   "email": "test@mail.com",
-  "password": "test1"
+  "password": "test"
 }
 
 ###
 
-//
-// API ENDPOINTS PRODUKTER
-//
-
 // HÄMTA ALLA PRODUKTER
 
 # @name getProducts
-GET http://localhost:3000/api/products
+GET http://localhost:3000/products
 
 ###
 
 // HÄMTA SPECIFIK PRODUKT
-GET http://localhost:3000/api/products/641c4e31277c4091838d69e5
+GET http://localhost:3000/products/641c4e31277c4091838d69e5
 
 ###
 
 // SKAPA PRODUKT
-POST http://localhost:3000/api/products/add
+POST http://localhost:3000/products/add
 Content-Type: application/json
 
 {
@@ -70,12 +62,8 @@ Content-Type: application/json
 
 ###
 
-//
-// API ENDPOINTS ORDERS
-//
-
-// SKAPA ORDER FÖR EN SPECIFIK USER // PRODUCTS ÄR EN ARRAY MOTSVARANDE INNEHÅLLET I KUNDVAGN
-POST http://localhost:3000/api/orders/add
+// SKAPA ORDER 
+POST http://localhost:3000/orders/add
 Content-Type: application/json
 
 {
@@ -96,6 +84,6 @@ Content-Type: application/json
 
 
 // HÄMTA ALLA ORDERS
-GET http://localhost:3000/api/orders/all/
+GET http://localhost:3000/orders/all/
 
 ###
