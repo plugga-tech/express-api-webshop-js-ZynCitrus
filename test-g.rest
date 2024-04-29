@@ -9,7 +9,7 @@ POST http://localhost:3000/users/
 Content-Type: application/json
 
 {
-  "id": "641c121f804b5a8753f0812f"
+  "_id": "662e941e32e21ffbb6ac8315"
 }
 
 ###
@@ -45,7 +45,7 @@ GET http://localhost:3000/products
 ###
 
 // HÄMTA SPECIFIK PRODUKT
-GET http://localhost:3000/products/641c4e31277c4091838d69e5
+GET http://localhost:3000/products/662e957cd38bf84dae27b86d
 
 ###
 
@@ -67,14 +67,14 @@ POST http://localhost:3000/orders/add
 Content-Type: application/json
 
 {
-  "user": "{{getUsers.response.body.$[0].id}}",
+  "user": "662e941e32e21ffbb6ac8315",
       "products": [
     {
-      "productId": "641c4e31277c4091838d69e5",
+      "productId": "662fe85d503c30087cf0cb0d",
       "quantity": 1
     },
     {
-      "productId": "641c4f5e47a80dff3a5351fe",
+      "productId": "662e95c31edc4c776957c175",
       "quantity": 2
     }
   ]
