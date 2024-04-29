@@ -21,7 +21,7 @@ MongoClient.connect(url)
   .then((client) => {
     console.log("Connected to the database");
 
-    const db = client.db("webshop");
+    const db = client.db("sebastian-nilsson");
     app.locals.db = db;
   })
   .catch((error) => {
