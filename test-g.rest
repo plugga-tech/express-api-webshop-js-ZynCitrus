@@ -70,11 +70,11 @@ Content-Type: application/json
   "user": "662e941e32e21ffbb6ac8315",
       "products": [
     {
-      "productId": "662fe85d503c30087cf0cb0d",
+      "productId": "662e95e143f6cf3a29b596dd",
       "quantity": 1
     },
     {
-      "productId": "662e95c31edc4c776957c175",
+      "productId": "662e9be9ec4360c848358ee3",
       "quantity": 2
     }
   ]
